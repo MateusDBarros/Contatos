@@ -10,6 +10,7 @@ Este é um projeto de Gerenciador de Contatos em C, desenvolvido para ajudar a p
 - **Listar Todos os Contatos**: Exibe todos os contatos salvos.
 
 ## Contato
-
-Para mais informações, entre em contato via [mb685212@gmail.com](mailto:mb685212@gmail.com) ou [linkedin](https://linkedin.com/in/mateus-barros13)
+Para mais informações, entre em contato via
+- [LinkedIn](https://www.linkedin.com/in/mateus-barros13)
+- [Email](mb685212@gmail.com)
 
