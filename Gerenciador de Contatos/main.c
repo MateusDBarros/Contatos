@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
+//Estrutura os dados
 struct Contato {
     char nome[50];
     char numero[25];
     char email[50];
 };
 
+//Criação dos prototipos das funções
 void adicionar(struct Contato contatos[100], int *numContatos);
 int buscar(struct Contato contatos[100], int l, int r, char alvo[25]);
 void ordenar(struct Contato contatos[100], int *numContatos);
@@ -91,6 +93,7 @@ void adicionar(struct Contato contatos[], int *numContatos)
     (*numContatos)++;
 }
 
+//Algoritmo de ordenação
 void ordenar(struct Contato contatos[], int *numContatos)
 {
     struct Contato temp;
@@ -106,6 +109,7 @@ void ordenar(struct Contato contatos[], int *numContatos)
     }
 }
 
+//Algoritmo de Busca
 int buscar(struct Contato contatos[], int l, int r, char alvo[25])
 {
     if (l > r) return -1;
@@ -119,6 +123,7 @@ int buscar(struct Contato contatos[], int l, int r, char alvo[25])
         return buscar(contatos, meio + 1, r, alvo);
 }
 
+//Remove um indice da array e ajusta o total deles
 void remover(struct Contato contatos[], int *numContatos)
 {   
     char nome[25];
@@ -142,6 +147,7 @@ void remover(struct Contato contatos[], int *numContatos)
     printf("Contato nao encontrado!\n");
 }
 
+//Loop printando os dados da array de Struct
 void listar(struct Contato contatos[], int *numContatos)
 {
     if(*numContatos == 0) {
